@@ -64,7 +64,7 @@ final class MkNotifications implements Notifications {
     @SuppressWarnings("PMD.AvoidInstantiatingObjectsInLoops")
     MkNotifications(final int quantity) {
         this.notifications = new ArrayList<Notification>(quantity);
-        for (int index = 0; index < quantity; ++index) {
+        for (int index = 0; index < quantity; index += 2) {
             this.notifications.add(index, new MkNotification(index));
         }
     }
