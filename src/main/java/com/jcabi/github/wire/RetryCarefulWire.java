@@ -98,7 +98,7 @@ public final class RetryCarefulWire implements Wire {
         final int connect, final int read
     ) throws IOException {
         return this.real.send(
-            req, home, method, headers, content, connect, read
+            req, home, method, headers, content, connect, -1
         );
     }
 
